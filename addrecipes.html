@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipes</title>
+
+      <!-- font awesome-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <!--Navbar css dosyaları-->
+      <link rel="stylesheet" href="./css/index/navbar/navbar.css">
+        <!--Form css dosyaları-->
+        <link rel="stylesheet" href="/views/css/form.css">
+
+
+       <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">TASTEFULL</label>
+    <ul>
+      <li><a class="active" href="/categories">Recipes</a></li>
+      <li><a class="active" href="/categories/quickandeasy">Quick and Easy</a></li>
+      <li><a  class="active" href="/categories/snack">Snack</a></li>
+      <li><a class="active"  href="/categories/drink">Drink</a></li>
+      <li><a  class="active" href="/categories/dessert">Dessert</a></li>
+      <li><a class="active"  href="/categories/healty">Healty</a></li>
+
+    </ul>
+  </nav>
+      <div class="none"></div>
+       
+       
+      <form class="form" action="/admin/add-recipes" method="POST">
+
+        Recipe's name <br>
+        <input class="sm" type="text" name="name" id="name" placeholder="Recipe's Name">
+        <br>İmage
+        <input class="sm"  type="text" name="img" id="img" placeholder="img">
+        <br>Prep
+        <input  class="sm" type="text" name="prep" id="prep" placeholder="Prep Time">
+        <br>Cook
+        <input  class="sm" type="text" name="cook" id="cook" placeholder="Cook Time">
+        <br>Total
+        <input class="sm"  type="text" name="total" id="total" placeholder="Total Time">
+        <br>Nutrition
+        <input class="big" type="text" name="nutrition" id="nutrition" placeholder="Nutrition">
+        <br>ingredients
+        <input  class="big" type="text" name="ingredients" id="ingredients" placeholder="ingredients">
+        <br>Preparation
+        <input class="big"  type="text" name="preparation" id="preparation" placeholder="preparation">
+        <br>
+        categories
+        <br>
+        <input class="sm"  type="text" name="categories" id="categories" placeholder="categories">
+        <br>
+        Tables
+        <br>
+        <select name="table" id="table" style="width: 300px; height: 50px;">
+          <option value="dinner">dinner</option>
+          <option value="bread">bread</option>
+          <option value="breakfast">breakfast</option>
+          <option value="dessert">dessert</option>
+          <option value="drink">drink</option>
+          <option value="lunch">lunch</option>
+          <option value="salad">salad</option>
+          <option value="snack">snack</option>
+
+        </select>
+
+    
+        <br>
+        <input class="button" type="reset" value="Sıfırla">
+        <input  class="button" type="submit" value="Ekle">
+
+
+
+      </form>
+
+
+    </body>
+</html>

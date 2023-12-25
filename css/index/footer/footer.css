@@ -1,0 +1,43 @@
+.footer{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    flex-direction: column;
+    background-color: #E2E5DE;
+    
+    
+}
+.social{
+    display: flex;
+    margin: 10px 30px;
+}
+
+.mail,.instagram,.phone{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.social p{
+    margin-left: 1vw;
+}
+.social p,i{
+
+    font-size:2vw;
+}
+
+.instagram:hover, .mail:hover ,.phone:hover{
+    color:#926F34 ;
+    transform: scale(1.05);
+
+}
+
+
+
+@media (max-width:991px){
+    .footer{
+        margin: 50px auto;
+    }
+   
+}

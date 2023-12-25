@@ -1,0 +1,101 @@
+
+
+
+.container{
+    display: flex;
+    height: 44.11vw;
+    width: 100%;
+    margin: 0;
+    margin-bottom:20px;
+    padding: 0;
+}
+.advertisement{
+    width: 320px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+.advertisement img{
+    width: 320px;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+.slider{
+    position: relative;
+    width:73.5vw;
+    height: 44.11vw;
+    border: 1px solid grey;
+    margin: 2.2vw;
+    margin-top: 0;
+    overflow: hidden;
+    border: 5px solid #000000;
+    border-left: 5px solid #000000;
+}
+
+.slider-content{
+    position: absolute;
+    width: 1000%;
+    left: 0;
+    animation: slide 10s infinite;
+}
+.slider-item{
+    width: 33,33%;
+    float: left;
+}
+.slider-item img{
+    width: 73.5vw;
+
+
+    height: 44.11vw;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+@keyframes slide{
+    0% {
+        transform:translateX(0px);
+    }
+    10% {
+        transform:translateX(-73.52vw);
+    }
+    20% {
+        transform:translateX(-73.52vw);
+    }
+    30% {
+        transform:translateX(-73.52vw);
+    }
+    40% {
+        transform:translateX(-147vw);
+    }
+    50% {
+        transform:translateX(-147vw);
+    }
+    60% {
+        transform:translateX(-147vw);
+    } 
+    70% {
+        transform:translateX(0px);
+    }
+    /* tekrar kulanılacaklar */
+    /* 80% {
+        transform:translateX(-28000px);
+    } */
+    /* 90% {
+        transform:translateX(0px);
+    } */
+    
+    
+
+}
+
+
+@media (max-width:991px){
+   .container{
+       display: none;
+   }
+}
